@@ -14,6 +14,8 @@
 		5EB0A31D17B965C400708DD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A31C17B965C400708DD3 /* main.m */; };
 		5EB0A32117B965C400708DD3 /* ASHAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A32017B965C400708DD3 /* ASHAppDelegate.m */; };
 		5EB0A32317B965C400708DD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A32217B965C400708DD3 /* Images.xcassets */; };
+		5EB0A34117B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A34017B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m */; };
+		5EB0A34417B9664D00708DD3 /* ASHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A34317B9664D00708DD3 /* ASHCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		5EB0A32017B965C400708DD3 /* ASHAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASHAppDelegate.m; sourceTree = "<group>"; };
 		5EB0A32217B965C400708DD3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5EB0A32917B965C500708DD3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5EB0A33F17B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHSpringyCollectionViewFlowLayout.h; sourceTree = "<group>"; };
+		5EB0A34017B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHSpringyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
+		5EB0A34217B9664D00708DD3 /* ASHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHCollectionViewController.h; sourceTree = "<group>"; };
+		5EB0A34317B9664D00708DD3 /* ASHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +84,10 @@
 			children = (
 				5EB0A31F17B965C400708DD3 /* ASHAppDelegate.h */,
 				5EB0A32017B965C400708DD3 /* ASHAppDelegate.m */,
+				5EB0A34217B9664D00708DD3 /* ASHCollectionViewController.h */,
+				5EB0A34317B9664D00708DD3 /* ASHCollectionViewController.m */,
+				5EB0A33F17B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.h */,
+				5EB0A34017B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m */,
 				5EB0A32217B965C400708DD3 /* Images.xcassets */,
 				5EB0A31717B965C400708DD3 /* Supporting Files */,
 			);
@@ -161,6 +171,8 @@
 			files = (
 				5EB0A31D17B965C400708DD3 /* main.m in Sources */,
 				5EB0A32117B965C400708DD3 /* ASHAppDelegate.m in Sources */,
+				5EB0A34117B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m in Sources */,
+				5EB0A34417B9664D00708DD3 /* ASHCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

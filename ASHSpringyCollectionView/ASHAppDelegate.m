@@ -7,14 +7,16 @@
 //
 
 #import "ASHAppDelegate.h"
+#import "ASHCollectionViewController.h"
+#import "ASHSpringyCollectionViewFlowLayout.h"
 
 @implementation ASHAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[[ASHCollectionViewController alloc] initWithCollectionViewLayout:[[ASHSpringyCollectionViewFlowLayout alloc] init]]];
     [self.window makeKeyAndVisible];
     return YES;
 }
