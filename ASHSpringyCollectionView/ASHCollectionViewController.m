@@ -28,7 +28,7 @@ static NSString *CellIdentifier = @"Cell";
 #pragma mark - UICollectionViewDataSource Methods
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    return 1000;
+    return 10000;
 }
 
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
