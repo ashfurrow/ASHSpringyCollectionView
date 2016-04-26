@@ -52,13 +52,20 @@
     
     // Step 1: Remove any behaviours that are no longer visible.
     NSArray *noLongerVisibleBehaviours = [self.dynamicAnimator.behaviors filteredArrayUsingPredicate:[NSPredicate predicateWithBlock:^BOOL(UIAttachmentBehavior *behaviour, NSDictionary *bindings) {
-        BOOL currentlyVisible = [itemsIndexPathsInVisibleRectSet member:[[[behaviour items] firstObject] indexPath]] != nil;
+        id <UIDynamicItem> item = [[behaviour items] firstObject];
+        BOOL currentlyVisible = NO;
+        if ([item isKindOfClass:[UICollectionViewLayoutAttributes class]]) {
+            currentlyVisible = [itemsIndexPathsInVisibleRectSet member:[(UICollectionViewLayoutAttributes<UIDynamicItem> *)item indexPath]] != nil;
+        }
         return !currentlyVisible;
     }]];
     
     [noLongerVisibleBehaviours enumerateObjectsUsingBlock:^(id obj, NSUInteger index, BOOL *stop) {
         [self.dynamicAnimator removeBehavior:obj];
-        [self.visibleIndexPathsSet removeObject:[[[obj items] firstObject] indexPath]];
+        id <UIDynamicItem>item = [[obj items] firstObject];
+        if ([item isKindOfClass:[UICollectionViewLayoutAttributes class]]) {
+            [self.visibleIndexPathsSet removeObject:[(UICollectionViewLayoutAttributes<UIDynamicItem> *)item indexPath]];
+        }
     }];
     
     // Step 2: Add any newly visible behaviours.
