@@ -16,6 +16,7 @@
 		5EB0A32317B965C400708DD3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EB0A32217B965C400708DD3 /* Images.xcassets */; };
 		5EB0A34117B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A34017B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m */; };
 		5EB0A34417B9664D00708DD3 /* ASHCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EB0A34317B9664D00708DD3 /* ASHCollectionViewController.m */; };
+		762E33331D48120B001241A5 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762E33321D48120B001241A5 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		5EB0A34017B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHSpringyCollectionViewFlowLayout.m; sourceTree = "<group>"; };
 		5EB0A34217B9664D00708DD3 /* ASHCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASHCollectionViewController.h; sourceTree = "<group>"; };
 		5EB0A34317B9664D00708DD3 /* ASHCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASHCollectionViewController.m; sourceTree = "<group>"; };
+		762E33321D48120B001241A5 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 				5EB0A34017B9663900708DD3 /* ASHSpringyCollectionViewFlowLayout.m */,
 				5EB0A32217B965C400708DD3 /* Images.xcassets */,
 				5EB0A31717B965C400708DD3 /* Supporting Files */,
+				762E33321D48120B001241A5 /* Launch Screen.storyboard */,
 			);
 			path = ASHSpringyCollectionView;
 			sourceTree = "<group>";
@@ -132,7 +135,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = ASH;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "Ash Furrow";
 			};
 			buildConfigurationList = 5EB0A30817B965C400708DD3 /* Build configuration list for PBXProject "ASHSpringyCollectionView" */;
@@ -157,6 +160,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762E33331D48120B001241A5 /* Launch Screen.storyboard in Resources */,
 				5EB0A31B17B965C400708DD3 /* InfoPlist.strings in Resources */,
 				5EB0A32317B965C400708DD3 /* Images.xcassets in Resources */,
 			);
@@ -208,6 +212,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -266,6 +271,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASHSpringyCollectionView/ASHSpringyCollectionView-Prefix.pch";
 				INFOPLIST_FILE = "ASHSpringyCollectionView/ASHSpringyCollectionView-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashfurrow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -279,6 +285,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ASHSpringyCollectionView/ASHSpringyCollectionView-Prefix.pch";
 				INFOPLIST_FILE = "ASHSpringyCollectionView/ASHSpringyCollectionView-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ashfurrow.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -303,6 +310,7 @@
 				5EB0A33B17B965C500708DD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
